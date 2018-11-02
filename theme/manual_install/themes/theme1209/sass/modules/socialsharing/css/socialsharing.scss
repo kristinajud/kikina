@@ -1,0 +1,96 @@
+@import "_theme_variables";
+
+
+/* -------*--------------------------------------------------------------------------------------------------------
+										 Social Sharing 
+------------------------------------------------------------------------------------------------------------------- */
+
+.socialsharing_product{
+	
+	.btn.btn-default.social-sharing{
+		
+		&:hover{
+			i{
+			color:#fff					
+				}
+			}
+		
+		i{
+			color:#333;
+			@include transition(all 0.3s ease);			
+			}
+		
+		}
+	
+	}
+
+.btn-facebook,
+.btn-twitter,
+.btn-google-plus,
+.btn-pinterest {
+	&:hover {
+		border-color: white;
+	}
+}
+
+.btn-facebook {
+	i {
+		color: white;
+		
+	}
+	
+	color: white;
+	background-color: #435f9f;
+	&:hover {
+		border-color: #435f9f;
+		background:#fff;
+		i {
+			color: #435f9f;
+		}
+	}
+}
+
+.btn-twitter {
+	i {
+		color: white;
+	}
+	color: white;
+	background-color: #00aaf0;
+	&:hover {
+		border-color: #00aaf0;
+		background:#fff;
+		i {
+			color: #00aaf0;
+		}
+	}
+}
+
+.btn-google-plus {
+	i {
+		color: white;
+	}
+	color: white;
+	background-color: #e04b34;
+	&:hover {
+		border-color: #e04b34;
+		background:#fff;
+		i {
+			color: #e04b34;
+		}
+	}
+}
+
+.btn-pinterest {
+	i {
+		color: white;
+	}
+	color: white;
+	background-color: #ce1f21;
+	&:hover {
+		border-color:#ce1f21;
+		background:#fff;
+		i {
+			color: #ce1f21;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+/* -------*--------------------------------------------------------------------------------------------------------
+										 Social Sharing 
+------------------------------------------------------------------------------------------------------------------- */
+.socialsharing_product .btn.btn-default.social-sharing:hover i {
+  color: white; }
+.socialsharing_product .btn.btn-default.social-sharing i {
+  color: #333;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.btn-facebook:hover,
+.btn-twitter:hover,
+.btn-google-plus:hover,
+.btn-pinterest:hover {
+  border-color: white; }
+
+.btn-facebook {
+  color: white;
+  background-color: #435f9f; }
+  .btn-facebook i {
+    color: white; }
+  .btn-facebook:hover {
+    border-color: #435f9f;
+    background: #fff; }
+    .btn-facebook:hover i {
+      color: #435f9f; }
+
+.btn-twitter {
+  color: white;
+  background-color: #00aaf0; }
+  .btn-twitter i {
+    color: white; }
+  .btn-twitter:hover {
+    border-color: #00aaf0;
+    background: #fff; }
+    .btn-twitter:hover i {
+      color: #00aaf0; }
+
+.btn-google-plus {
+  color: white;
+  background-color: #e04b34; }
+  .btn-google-plus i {
+    color: white; }
+  .btn-google-plus:hover {
+    border-color: #e04b34;
+    background: #fff; }
+    .btn-google-plus:hover i {
+      color: #e04b34; }
+
+.btn-pinterest {
+  color: white;
+  background-color: #ce1f21; }
+  .btn-pinterest i {
+    color: white; }
+  .btn-pinterest:hover {
+    border-color: #ce1f21;
+    background: #fff; }
+    .btn-pinterest:hover i {
+      color: #ce1f21; }

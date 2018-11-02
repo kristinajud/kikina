@@ -1,0 +1,81 @@
+@import "../../_theme_variables";
+
+#currencies-block-top {	
+	float: right;	
+	position: relative;  
+    margin-left:18px;
+   	padding-top:28px;
+	margin-right:37px;
+	@media (max-width: $screen-md-max) { //  max 1199px
+		margin-right:0;				
+	}
+	
+	  span.firstWord {
+		display: none;
+	  }
+    div.current {			
+	color: $base-text-color;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 0;
+    position: relative;
+	font-family:$font-custom;
+	@include transition(all 0.3s ease);		
+	text-transform:capitalize;
+	cursor:pointer;
+	span{display:none}
+	strong{font-weight:normal}	
+	      &:after {
+			content: "";
+			font-family: $font-icon;		
+			font-weight:normal;
+			 color: $base-text-color;
+			font-size: 16px;
+			margin-left: 6px;
+			position: relative;	
+			@include transition(all 0.3s ease);	
+			
+		}
+		
+		&:hover, &.active {
+             color:$color1;
+          &:after {
+		
+			  }
+		}
+
+		&.active {			
+			&:after {
+				 content: "";	
+			}
+		}
+ }
+    
+  ul {
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 157px;
+    background:#fff;
+    z-index: 20;
+	border:$main_border;	
+    li {
+      color: #333;
+      line-height: 35px;
+      font-size: 13px;
+      a,
+      > span {
+        padding: 0 10px 0 12px;
+        display: block;
+        color: #333;
+		@include transition(all 0.3s ease);
+
+      }
+      &.selected, &:hover a,   &.selected a {
+     color:$color1
+      }
+    }
+  }
+	
+}

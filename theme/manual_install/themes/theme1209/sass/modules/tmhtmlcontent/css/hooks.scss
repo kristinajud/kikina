@@ -1,0 +1,135 @@
+@import "_theme_variables";
+@import 'compass';
+
+#tmhtmlcontent_topColumn{
+	position:relative;
+	z-index:1;	
+	
+	li{
+		text-align:center;
+		padding:89px 30px;		
+		
+	  @media (max-width: $screen-xs-max) { // max 767px			
+        }		
+		
+		h2{
+		   font-size:150px;
+		   line-height:1em;
+		   color:#fff;
+		   margin:0 0 14px;
+		   padding:0;
+		   font-family:$font-custom;
+		   text-shadow:0 4px 5px rgba(0,0,0,0.12);
+		    visibility:hidden;	   
+		   @media (max-width: $screen-sm-max) { //  max 991px
+			   font-size:110px;		
+	      }   
+		   
+		   
+		  @media (max-width: $screen-xs-max) { // max 767px	
+		   font-size:60px;
+          }		   
+		   
+		}
+		
+		h3{
+		   font-size:48px;
+		   line-height:1em;
+		   color:#fff;
+		   margin:0 0 30px;
+		   padding:0;
+		   font-family:$font-custom;
+		   text-shadow:0 4px 5px rgba(0,0,0,0.12);
+		    visibility:hidden;
+		}			
+		
+		a{
+			font-size:22px;
+			line-height:1em;
+			color:#fff;
+			text-transform:uppercase;			
+			@include border-radius(5px);
+			padding:23px 44px 23px;
+			background:$color1;
+			display:inline-block;
+		   font-family:$font-custom;
+			@include transition(all 0.3s ease);
+		   visibility:hidden;
+         &:hover{
+			background:#fff;
+			color:#333
+			
+			}
+			
+			}			
+	}
+}
+
+
+
+#tmhtmlcontent_home{
+	  padding:69px 0 55px ; 
+	  min-height: 400px;  
+	  z-index:1; 
+ 
+      ul{margin:0}
+	   
+	  li{ 
+
+		text-align:center;
+		padding:89px 30px;	
+		
+		 @media (max-width: $screen-xs-max) { // max 767px	
+		padding:40px 30px;
+        }
+		
+		
+		h2{
+		   font-size:48px;
+		   line-height:1em;
+		   color:#fff;
+		   margin:0 0 28px;
+		   padding:0;
+		   font-family:$font-custom;
+		   	visibility:hidden;
+			
+	 @media (max-width: $screen-xs-max) { // max 767px	
+			   font-size:40px;
+        }
+			
+			
+		   }
+		
+		h3{
+		   font-size:100px;
+		   line-height:1em;
+		   color:#fff;
+		   margin:0 0 43px;
+		   padding:0;
+		   font-family:$font-custom;
+		   		   visibility:hidden;
+	  @media (max-width: $screen-xs-max) { // max 767px	
+	   font-size:40px;
+        }
+		   
+		}	
+							
+		a{
+			font-size:22px;
+			line-height:1em;
+			color:#333;
+			text-transform:uppercase;
+			@include border-radius(5px);
+		    font-family:$font-custom;
+			padding:23px 44px 23px;
+			background:#fff;
+			display:inline-block;
+			@include transition(all 0.3s ease);
+			 visibility:hidden;
+			&:hover{
+				background:$color1;
+				color:#fff;		
+			}  
+	     }	
+	  }
+	}

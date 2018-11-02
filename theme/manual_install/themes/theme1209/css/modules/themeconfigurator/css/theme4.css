@@ -1,0 +1,139 @@
+body {
+  background: #f1eee9; }
+
+header .row-top {
+  background: #bdb6ab; }
+  @media (max-width: 1199px) {
+    header .row-top {
+      background: none; } }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #header .sf-menu {
+    background: #bdb6ab; } }
+#header ul#header_links li a:hover,
+#header #languages-block-top div.current:hover, #header #languages-block-top div.current.active,
+#header #currencies-block-top div.current:hover, #header #currencies-block-top div.current.active,
+#header .shopping_cart > a:first-child:before,
+#header #languages-block-top ul li.selected, #header #languages-block-top ul li:hover a, #header #languages-block-top ul li.selected a, #header #languages-block-top ul li.selected span,
+#header #currencies-block-top ul li.selected, #header #currencies-block-top ul li:hover a, #header #currencies-block-top ul li.selected a,
+#header .sf-menu li li li a:hover,
+#header .sf-menu > li > ul > li > a:hover {
+  color: #bdb6ab; }
+#header .cat-title {
+  background: #bdb6ab; }
+  #header .cat-title:hover {
+    background: #111; }
+
+@media (max-width: 767px) {
+  #home-page-tabs > li {
+    border-color: #bdb6ab; } }
+
+#layer_cart .layer_cart_product h2 {
+  color: #bdb6ab; }
+
+.home-column #homepage-blog a.btn:hover,
+#header #header-login .header_user_info a:hover {
+  color: #bdb6ab; }
+
+#header #header-login-content li ul li a:before,
+#header .shopping_cart:hover > a:first-child {
+  background-color: #bdb6ab;
+  border-color: #bdb6ab; }
+
+.btn.lnk_view {
+  color: #bdb6ab; }
+
+.btn.btn-default:hover, .btn.btn-default:active,
+.btn.btn-default:active:focus,
+.btn.btn-default:focus {
+  border-color: #bdb6ab;
+  background: #bdb6ab; }
+
+.sale-label {
+  background: #bdb6ab; }
+
+#homepage-slider .homeslider-description h3 {
+  color: #fff; }
+
+#homepage-slider .bx-wrapper .bx-pager.bx-default-pager a:hover, #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a.active,
+#htmlcontent_top ul li h2::before {
+  background: #bdb6ab; }
+
+#htmlcontent_top ul li a:hover .item-html::after {
+  border-color: #bdb6ab transparent transparent; }
+
+#top_column #tmhtmlcontent_topColumn li a {
+  background: #bdb6ab; }
+  #top_column #tmhtmlcontent_topColumn li a:hover {
+    background: #fff; }
+
+#footer #newsletter_block_left .form-group .form-control {
+  background: #fff; }
+
+.product-box .product-image,
+#subcategories ul li .subcategory-image a, .block .products-block li .products-block-image {
+  background: #fff;
+  border: 1px solid #bdb6ab; }
+
+ul.product_list .product-image-container .product_img_link,
+ul.product_list .product-image-container {
+  background: #fff; }
+
+ul.product_list.grid > li .product-container {
+  background: none; }
+
+.content_scene_cat {
+  background: #fff;
+  border: 1px solid #bdb6ab;
+  padding-right: 15px; }
+
+ul.product_list.list > li .product-container {
+  background: #fff; }
+
+#home-page-tabs {
+  border-color: #bdb6ab; }
+
+#home-page-tabs > li a:before {
+  border-color: #bdb6ab transparent transparent; }
+
+#home-page-tabs > li.active a, #home-page-tabs > li a:hover,
+.product-name a:hover, a.product-name:hover,
+.price.product-price, .price-percent-reduction {
+  color: #bdb6ab; }
+
+ul.product_list.grid > li .product-container .right-block, .shopping_cart > a:first-child, #header .cart_block, .cart_block d, .cart_block .cart-prices, #header .cart_block .cart-buttons, #social_block, .footer-container #footer .bottom-footer, ul.product_list.list > li .product-container, .content_sortPagiBar .sortPagiBar, ul.product_list.list > li .right-block .right-block-content, .block .products-block li, .block .list-block li, #subcategories, .cart_block dt {
+  border-color: #bdb6ab; }
+
+.btn.btn-default {
+  border-color: #bdb6ab; }
+
+.btn.ajax_add_to_cart_button,
+.btn.ajax_add_to_cart_product_button {
+  background: #bdb6ab; }
+
+.btn.lnk_view::before {
+  background: #333;
+  border-color: #333; }
+
+.btn.lnk_view:hover {
+  border-color: #333;
+  background: none; }
+
+#footer #newsletter_block_left .form-group .form-control {
+  background: none;
+  border: 1px solid #bdb6ab; }
+
+.home-column #tmhtmlcontent_home li a:hover {
+  background: #bdb6ab; }
+
+.home-column #homepage-blog .title_block a:hover,
+.home-column #homepage-blog .product-name:hover,
+.footer-container #footer h4 a:hover {
+  color: #bdb6ab; }
+
+#footer #newsletter_block_left .form-group .btn-sm:hover,
+#toTop {
+  background: #bdb6ab; }
+
+#toTop:after {
+  border-color: #bdb6ab; }

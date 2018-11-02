@@ -1,0 +1,89 @@
+@import "../../../_theme_variables";
+
+$color1: #486e85;
+
+
+header .row-top{background:$color1;
+	@media (max-width: $screen-md-max) { //  max 1199px
+          background:none
+        }
+}
+
+#header{
+	
+	.sf-menu {	
+   @media (min-width: $screen-sm) and (max-width: $screen-md-max) { // min 768px max 1199px
+			background:$color1;
+	   }
+	}
+	
+	ul#header_links li a:hover,
+	#languages-block-top div.current:hover, #languages-block-top div.current.active,
+	#currencies-block-top div.current:hover, #currencies-block-top div.current.active,
+	.shopping_cart > a:first-child:before,
+	#languages-block-top ul li.selected, #languages-block-top ul li:hover a, #languages-block-top ul li.selected a, #languages-block-top ul li.selected span,
+	#currencies-block-top ul li.selected, #currencies-block-top ul li:hover a, #currencies-block-top ul li.selected a,
+		.sf-menu li li li a:hover,
+		.sf-menu > li > ul > li > a:hover{
+	    color:$color1;		
+		}
+		
+		.cat-title{background:$color1;
+		 &:hover{background:#111}
+		}
+      }
+		#home-page-tabs > li{		
+		
+        @media (max-width: $screen-xs-max) { // max 767px	
+          border-color:$color1
+        }		
+		}
+
+
+#layer_cart .layer_cart_product h2{color:$color1}
+.home-column #homepage-blog a.btn:hover,
+#header #header-login .header_user_info a:hover{color:$color1}
+#header #header-login-content li ul li a:before,
+#header .shopping_cart:hover > a:first-child{background-color:$color1;border-color:$color1}
+.btn.lnk_view{color:$color1}
+.btn.btn-default:hover, .btn.btn-default:active, 
+.btn.btn-default:active:focus,
+.btn.btn-default:focus{border-color:$color1;background:$color1}
+
+.sale-label {
+	background:$color1;
+	
+	}
+	
+    #homepage-slider .homeslider-description h3{color:#fff}
+
+	#homepage-slider .bx-wrapper .bx-pager.bx-default-pager a:hover, #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a.active,
+	#htmlcontent_top ul li h2::before{background:$color1}
+	#htmlcontent_top ul li a:hover .item-html::after{border-color: $color1 transparent transparent;}
+	
+	#top_column #tmhtmlcontent_topColumn li a{background:$color1;
+	  &:hover{background:#fff;}	
+	}
+	
+	#home-page-tabs{border-color:$color1}
+	#home-page-tabs > li a:before{  border-color: $color1 transparent transparent }
+	#home-page-tabs > li.active a, #home-page-tabs > li a:hover,
+	.product-name a:hover,a.product-name:hover,
+	.price.product-price,.price-percent-reduction{color:$color1}
+
+	.btn.ajax_add_to_cart_button,
+	.btn.ajax_add_to_cart_product_button
+	{background:$color1;}
+	
+	.btn.lnk_view::before{background:#333;border-color:#333}
+	.btn.lnk_view:hover{border-color:#333;background:none}
+
+	
+	 .home-column #tmhtmlcontent_home li a:hover{background:$color1}
+
+	.home-column #homepage-blog .title_block a:hover,
+	.home-column #homepage-blog .product-name:hover,
+	.footer-container #footer h4 a:hover{color:$color1}
+	#footer #newsletter_block_left .form-group .btn-sm:hover,
+	#toTop {background:$color1}
+	#toTop:after{border-color:$color1}

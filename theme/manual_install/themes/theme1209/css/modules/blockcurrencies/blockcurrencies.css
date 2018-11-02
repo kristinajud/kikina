@@ -1,0 +1,69 @@
+@charset "UTF-8";
+#currencies-block-top {
+  float: right;
+  position: relative;
+  margin-left: 18px;
+  padding-top: 28px;
+  margin-right: 37px; }
+  @media (max-width: 1199px) {
+    #currencies-block-top {
+      margin-right: 0; } }
+  #currencies-block-top span.firstWord {
+    display: none; }
+  #currencies-block-top div.current {
+    color: #333333;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 0;
+    position: relative;
+    font-family: "Adamina", "Roboto", serif;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    cursor: pointer; }
+    #currencies-block-top div.current span {
+      display: none; }
+    #currencies-block-top div.current strong {
+      font-weight: normal; }
+    #currencies-block-top div.current:after {
+      content: "";
+      font-family: "FontAwesome";
+      font-weight: normal;
+      color: #333333;
+      font-size: 16px;
+      margin-left: 6px;
+      position: relative;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    #currencies-block-top div.current:hover, #currencies-block-top div.current.active {
+      color: #1ab3bd; }
+    #currencies-block-top div.current.active:after {
+      content: ""; }
+  #currencies-block-top ul {
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 157px;
+    background: #fff;
+    z-index: 20;
+    border: 1px solid #e3e3e3; }
+    #currencies-block-top ul li {
+      color: #333;
+      line-height: 35px;
+      font-size: 13px; }
+      #currencies-block-top ul li a,
+      #currencies-block-top ul li > span {
+        padding: 0 10px 0 12px;
+        display: block;
+        color: #333;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      #currencies-block-top ul li.selected, #currencies-block-top ul li:hover a, #currencies-block-top ul li.selected a {
+        color: #1ab3bd; }

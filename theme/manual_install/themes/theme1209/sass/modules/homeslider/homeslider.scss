@@ -1,0 +1,359 @@
+@import "../../_theme_variables";
+
+/******************************************************************************
+						Home Page Slider
+*******************************************************************************/
+#homepage-slider {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+
+
+	@media (max-width: $screen-xs-max) { // max 767px
+		width: 100%;
+		max-width: 100%;
+		padding-top: 20px;
+	}
+	
+	#homeslider {
+		margin: 0 auto;
+		padding: 0;
+	}
+	.homeslider-description {
+      text-align:center;
+		cursor: pointer;
+		h2 {
+			font-size: 60px;
+			line-height:66px;
+			text-transform:uppercase;
+			color: white;
+			margin: 0;
+			padding: 0 0 17px;
+			position:relative;
+			font-family:$font-custom;
+	@media (max-width: $screen-md-max) { //  max 1199px
+			font-size: 40px;
+			line-height:1em;		
+	}
+		
+		
+        @media (max-width: $screen-xs-max) { // max 767px	
+	       font-size: 30px;
+			line-height:1em;	
+        }
+		
+		   @media (max-width: $screen-xs - 1) { // max 479px
+  	       font-size: 20px;
+			line-height:1em;
+			padding: 0;
+         }		
+					
+		}
+		
+		h3 {
+			font-size: 36px;
+			line-height:37px;
+			text-transform:uppercase;
+			color: $color1;
+			margin: 0;
+			padding: 0;
+			position:relative;
+			font-family:$font-custom;
+						
+		@media (max-width: $screen-md-max) { //  max 1199px
+				font-size: 30px;
+				line-height:1em;		
+		}
+		
+		   @media (max-width: $screen-xs-max) { // max 767px	
+	       font-size: 20px;
+			line-height:1em;	
+        }
+		
+			
+        @media (max-width: $screen-xs - 1) { // max 479px
+           display:none
+         }
+		
+		}
+
+	}
+
+}
+
+#homepage-slider:hover .bx-wrapper img{	@include scale(1.2);}
+
+
+
+/*****************************************************************************
+						BXSlider Styles
+********************************************************************************/
+//RESET AND LAYOUT
+#homepage-slider {
+	.homeslider-container {
+		position: relative;
+	}
+	.homeslider-image {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.homeslider-description {
+		position: absolute;
+		left: 0;
+  		top: 0;
+		width:100%;
+		
+		.container{
+		
+	 @media (min-width: $screen-lg) { // min 1200px
+					padding:0;
+	}
+		
+		>div{
+		background:rgba(0,0,0,0.5);		
+		padding:70px 30px;
+		overflow:hidden;
+		@include transition(all 0.3s ease);
+		
+			@media (max-width: $screen-md-max) { //  max 1199px
+			   padding:37px 30px;			
+			}
+		
+        @media (max-width: $screen-xs - 1) { // max 479px
+	   padding:20px;	
+         }
+	
+		}
+		}
+
+	}
+	.bx-wrapper {
+		position: relative;
+		padding: 0;
+		*zoom: 1;	
+       margin: 0 auto !important;
+	
+		
+		a {
+			display: block;
+		}
+		img {
+			display: block;	
+			max-width: 100%;
+			height: auto;
+			width:100%;
+			
+			
+	    	@include scale(1);
+	@include transition(all 15s linear);
+			
+		}
+	}
+	// THEME
+	.bx-wrapper {
+		.bx-viewport {
+			width: 100%;
+		}
+	}
+	.bx-wrapper .bx-pager{		
+		position: absolute;
+     	bottom:120px;
+		width:100%;
+		z-index:999;
+		padding:0;
+		
+        @media (max-width: $screen-xs-max) { // max 767px	
+          display:none
+        }
+		
+		
+	}
+	
+	.bx-wrapper .bx-controls-auto {display:none}
+	
+	//LOADER
+	.bx-wrapper .bx-loading {
+		min-height: 50px;
+		background: url(images/bx_loader.gif) center center no-repeat $light-background;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2000;
+	}
+	
+	//PAGER
+	.bx-wrapper .bx-pager {
+		text-align: center;
+		font-size: .85em;
+		font-family: $font-family;
+		font-weight: bold;
+		color: #666;
+	}
+	.bx-wrapper .bx-pager .bx-pager-item,
+	.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		background: #2e2e2e;
+		
+		text-indent: -9999px;
+		display: block;
+		width: 14px;
+		height: 14px;
+		margin: 0 8px;
+		outline: 0;
+		@include  border-radius(50px);
+		@include transition(all 0.3s ease);
+		@include scale(1);
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active {
+		background:$color1;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a:hover{		@include scale(1.3);}
+		.bx-wrapper .bx-pager.bx-default-pager a.active:hover{@include scale(1);}
+	
+	//DIRECTION CONTROLS (NEXT / PREV)
+	.bx-wrapper .bx-prev {
+		right: 60px;
+		left:auto;
+		&:after {
+			content: "\f053";	
+		}
+	}
+	.bx-wrapper .bx-next {
+		right: 10px;
+		&:after {
+			content: "\f054";	
+		}
+	}
+	.bx-wrapper .bx-controls-direction a {
+		position: absolute;
+		bottom: 10px;
+		top:auto;
+		outline: 0;
+		width: 52px;
+		height: 52px;
+		text-indent: -9999px;
+		z-index: 9999;
+		margin:0;
+		line-height:20px;
+		border: 2px solid $light-border-color;
+		&:before {
+			height: 48px;
+			width: 48px;
+			display: block;
+			background: $light-background;
+			content: ".";
+			opacity: 0.14;
+			text-indent: -9999px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+		}
+		&:after { 
+			display: block;
+			width: 48px;
+			height: 48px;
+			color: $light-text-color;
+			text-indent: 0;
+			text-align: center;
+			font-size: 21px;
+			font-family: $font-icon;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			padding: 16px 0 0 0;
+		}
+		&:hover {
+			&:before {
+				background: $dark-background;
+				opacity: 0.83;	
+			}
+		}
+	}
+	.bx-wrapper .bx-controls-direction a.disabled {
+		display: none;
+	}
+	//AUTO CONTROLS (START / STOP)
+	.bx-wrapper .bx-controls-auto {
+		text-align: center;
+	}
+	.bx-wrapper .bx-controls-auto .bx-start {
+		display: block;
+		width: 10px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		&:before {
+			content:'';
+			font-family:$font-icon;
+			color:#fff;
+		}
+	}
+	.bx-wrapper .bx-controls-auto .bx-stop {
+		display: block;
+		width: 9px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		&:before {
+			content:'';
+			font-family:$font-icon;
+			color:#fff;
+		}
+	}
+	//PAGER WITH AUTO-CONTROLS HYBRID LAYOUT
+	.bx-wrapper .bx-controls .bx-controls-auto {
+		right: 15px;
+		width: 35px;
+		top:15px;
+	}
+	//IMAGE CAPTIONS
+	.bx-wrapper .bx-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: #666\9;
+		background: rgba(80, 80, 80, 0.75);
+		width: 100%;
+	}
+	.bx-wrapper .bx-caption span {
+		color: $light-text-color;
+		font-family: $font-family;
+		display: block;
+		font-size: .85em;
+		padding: 10px;
+	}
+}
+.ie8 {
+	#homepage-slider{
+		.bx-wrapper .bx-controls-direction a {
+			&:before {
+				background: $dark-background;
+			}
+		}
+	}
+}
+
+#bx-pager-thumb {
+	text-align:center;
+	padding:10px 0;
+	a {
+		display:inline-block;
+		max-width:150px;
+		width:31%;
+		img {
+			max-width:100%;
+			height:auto;	
+		}
+	}
+}
