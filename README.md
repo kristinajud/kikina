@@ -1,2 +1,0 @@
-# kikina
-Pasibandymui
